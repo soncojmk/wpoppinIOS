@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>159893300399-88nimat0ckj6jnhq5sctlu2q41kdfjqt.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.159893300399-88nimat0ckj6jnhq5sctlu2q41kdfjqt</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAfJ4TWDzjz6iR87ZJAQ67jHsPOGlpGC0M</string>
+	<key>GCM_SENDER_ID</key>
+	<string>159893300399</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.wpoppin.whatspoppin</string>
+	<key>PROJECT_ID</key>
+	<string>wpoppin-157119</string>
+	<key>STORAGE_BUCKET</key>
+	<string>wpoppin-157119.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:159893300399:ios:005f3a7825a8e3a2</string>
+	<key>DATABASE_URL</key>
+	<string>https://wpoppin-157119.firebaseio.com</string>
+</dict>
+</plist>
