@@ -26,6 +26,7 @@ class ProfilePage: UIViewController {
         }
         
     }
+    @IBOutlet weak var post_button: UIButton!
     @IBOutlet weak var userAvatar: UIImageView!
     @IBOutlet weak var userName: UILabel!
     

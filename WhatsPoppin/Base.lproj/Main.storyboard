@@ -3958,8 +3958,12 @@ Line 9 Line 10</string>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0ca-AA-c9v">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.087105811111237524" green="0.42937744591048893" blue="0.57773875541637598" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" red="0.24560058116912842" green="0.48734551668167114" blue="0.70376455783843994" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </textAttributes>
                                 <items>
-                                    <navigationItem title="What'sPoppin" id="vxw-Uq-Lca"/>
+                                    <navigationItem id="vxw-Uq-Lca"/>
                                 </items>
                             </navigationBar>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Pja-iC-esK">
@@ -3997,15 +4001,16 @@ Line 9 Line 10</string>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c8T-YS-PaI">
                                 <rect key="frame" x="16" y="223" width="172" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <color key="backgroundColor" red="0.95686274510000002" green="0.53208066021099354" blue="0.057319910019544312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Saved Events">
+                                    <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
                                     <color key="titleShadowColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kYR-0n-5tE">
                                 <rect key="frame" x="187" y="223" width="172" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <state key="normal" title="Posted Events"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D79-ue-bmC">
@@ -4039,8 +4044,18 @@ Line 9 Line 10</string>
                                         <rect key="frame" x="0.0" y="28" width="343" height="361"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="FdQ-d6-Iy7" id="tVP-ur-01M">
-                                            <rect key="frame" x="0.0" y="0.0" width="343" height="360.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="343" height="361"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8J5-SI-NRZ">
+                                                    <rect key="frame" x="298" y="294" width="37" height="36"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <state key="normal" title="Post" image="ic_add_circle_outline_black_24dp"/>
+                                                    <connections>
+                                                        <segue destination="KFp-u7-iR0" kind="show" id="dfk-3q-e9Z"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
@@ -4049,6 +4064,7 @@ Line 9 Line 10</string>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+                        <outlet property="post_button" destination="8J5-SI-NRZ" id="4Y7-v2-QFQ"/>
                         <outlet property="userAvatar" destination="Pja-iC-esK" id="iU8-ZB-0kP"/>
                         <outlet property="userBio" destination="XYl-Bw-1KW" id="QkB-gg-Vgx"/>
                         <outlet property="userLocation" destination="qc7-PC-3Ss" id="pjg-tK-TFJ"/>
@@ -4180,6 +4196,7 @@ Line 9 Line 10</string>
                                 <state key="normal" title="Submit Post"/>
                                 <connections>
                                     <action selector="submitPost:" destination="EPD-XK-1tA" eventType="touchUpInside" id="Guf-oW-6Eo"/>
+                                    <segue destination="15m-8B-oG1" kind="show" id="cAr-Hg-PuS"/>
                                 </connections>
                             </button>
                         </subviews>
